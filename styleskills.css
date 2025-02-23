@@ -1,0 +1,132 @@
+/* Style for the skills.html page */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+    color: skyblue; /* Green color for the Skills section */
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+a {
+    color:skyblue; /* Green links for consistency */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    background-color: skyblue; /* Green background for the Back button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: red; /* Darker green on hover */
+}
+
+/* Style adjustments specific to skills section */
+ul.skills-list {
+    padding-left: 20px;
+}
+
+ul.skills-list li {
+    font-size: 18px;
+    color: #333;
+}
+
+ul.skills-list li strong {
+    color: skyblue; /* Highlighting skill names in green */
+}
+
+h3 {
+    margin-top: 20px;
+    color: skyblue; /* Matching color theme for subheadings */
+}
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    height: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: skyblue;
+    border-radius: 5px;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 80%;
+}
+body {
+    background: linear-gradient(-45deg, #87CEEB, #ADD8E6, #B0E0E6, #E0FFFF); /* Sky blue gradient */
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+/* Animation for smooth background transition */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+@keyframes fillSkill {
+    from { width: 0; }
+    to { width: 80%; }
+}
+
+.skill-bar .skill {
+    animation: fillSkill 2s ease-in-out;
+}
+.btn:hover {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}

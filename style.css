@@ -1,0 +1,332 @@
+/* General Body Styles */
+body {
+    background-image: url('https://example.com/your-image.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    margin: 10px;
+    padding: 0;
+    color: white; /* Ensures text color is white */
+    background-color: black; /* Fallback background color */
+}
+
+/* Container for Content */
+.container {
+    color: white;
+    padding: 20px;
+}
+
+/* Header Section */
+.header {
+    display: flex; /* Aligns the image and text horizontally */
+    align-items: center; /* Vertically centers the image and text */
+}
+
+.header img {
+    border-radius: 50%; /* Makes the image circular */
+    width: 100px; /* Adjust the size of the image */
+    height: 100px; /* Adjust the size of the image */
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
+.header h1 {
+    margin-left: 400px; 
+    text-align: center;
+    
+}
+
+/* Paragraph Styles */
+p { 
+    margin-left: 25px;
+    text-align: center;
+}
+
+/* Horizontal Line Styles */
+hr {
+    border: 1px solid white; /* Adds a white horizontal line */
+    margin: 20px 0; /* Adds space above and below the line */
+}
+
+/* Section Heading Styles */
+section h2 {
+    margin-left: 20px; /* Adds left margin to the section heading */
+}
+.container a.button-link {
+    background-color: skyblue;
+    color: white;
+}
+
+a.button-link {
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Makes the anchor behave like an inline block */
+    padding: 15px 30px; /* Adds padding around the text to create button-like appearance */
+    background-color: skyblue; /* Set the background color to skyblue */
+    color: white; /* White text color */
+    font-size: 22px; /* Font size for the text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centers the text inside the button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+a.button-link:hover {
+    background-color: red; /* Darker green when hovered */
+}
+
+
+
+h2 {
+    margin: 0; /* Removes default margin around h2 for better alignment */
+}
+/* Add this to style the buttons side by side */
+.button-container {
+    display: flex; /* Use flexbox to align items side by side */
+    gap: 20px; /* Adds space between the buttons */
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Add space above the buttons */
+}
+
+a.button-link {
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Makes the anchor behave like an inline block */
+    padding: 15px 30px; /* Adds padding around the text to create button-like appearance */
+    background-color: skyblue; /* Green background for the button */
+    color: white; /* White text color */
+    font-size: 22px; /* Font size for the text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centers the text inside the button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+a.button-link:hover {
+    background-color: red; /* Darker green when hovered */
+}
+
+h2 {
+    margin: 0; /* Removes default margin around h2 for better alignment */
+}
+/* Style for the 'Contact' button */
+a.button-link {
+    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; /* Makes the anchor behave like an inline block */
+    padding: 15px 30px; /* Adds padding around the text to create button-like appearance */
+    background-color: skyblue; /* Set the background color to skyblue */
+    color: white; /* White text color */
+    font-size: 22px; /* Font size for the text */
+    border-radius: 8px; /* Rounded corners */
+    text-align: center; /* Centers the text inside the button */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+a.button-link:hover {
+    background-color: red; /* Darker green when hovered */
+}
+h2 {
+    margin: 0; /* Removes default margin around h2 for better alignment */}
+/* Social Media Icons */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-size: 24px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.icon i {
+    color: #333;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+.linkedin { background-color: #0077b5; } /* LinkedIn Blue */
+.youtube { background-color: #ff0000; } /* YouTube Red */
+.instagram { background-color: #c13584; } /* Instagram Pink */
+.whatsapp { background-color: #25d366; } /* WhatsApp Green */
+
+.icon:hover i {
+    color: white;
+}
+/* Style for the navigation buttons */
+.button-link {
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: skyblue;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+    margin: 5px; /* Adds space between buttons */
+}
+
+/* Hover effect */
+.button-link:hover {
+    background-color: red;
+    transform: scale(1.05);
+}
+
+/* Center the buttons and space them */
+section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-link h2 {
+    font-size: 16px; /* Make text smaller */
+    margin: 0;
+    padding: 0;
+}
+.header img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Ensure width and height are equal */
+    object-fit: cover; /* Ensures the image is properly fitted */
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid white; /* Adds a white border */
+    display: block;
+     /* Centers the image */
+}
+body {
+    background-image: url('adrien-olichon-RCAhiGJsUUE-unsplash.jpg'); /* Replace with your image */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+    color: white; /* Adjust text color for contrast */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.button-link {
+    display: block;
+    width: 130px;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(255, 75, 43, 0.3);
+}
+
+.button-link:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(255, 75, 43, 0.5);
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    animation: fadeIn 1s ease-in-out;
+}
+html {
+    scroll-behavior: smooth;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: auto; /* Adjust width to fit content */
+    color: white;
+    text-align: left;
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-top-right-radius: 10px; /* Rounded corner on top-right */
+    font-size: smaller;
+}
+body {
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: skyblue;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-link:hover {
+    background: red;
+    box-shadow: 0px 0px 15px red;
+}
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    animation: borderAnimation 3s infinite linear;
+}
+
+@keyframes borderAnimation {
+    0% { border-color: red; }
+    33% { border-color: skyblue; }
+    66% { border-color: yellow; }
+    100% { border-color: red; }
+}
+section {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+h2 {
+    display: inline-block;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: skyblue;
+    transition: width 0.4s ease-in-out;
+}
+
+h2:hover::after {
+    width: 100%;
+}
+
+
