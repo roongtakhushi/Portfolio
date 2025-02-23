@@ -5,7 +5,7 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     background-attachment: fixed; /* Keeps the image fixed while scrolling */
-    margin: 10px;
+    margin: 0;
     padding: 0;
     color: white; /* Ensures text color is white */
     background-color: black; /* Fallback background color */
@@ -31,14 +31,15 @@ body {
 }
 
 .header h1 {
-    margin-left: 400px; 
+    margin-left: 350px; 
     text-align: center;
     
 }
 
 /* Paragraph Styles */
-p { 
-    margin-left: 25px;
+p {
+     
+    margin-left: 50px; 
     text-align: center;
 }
 
@@ -328,5 +329,217 @@ h2::after {
 h2:hover::after {
     width: 100%;
 }
+.container {
+    text-align: center; /* Centers content */
+    max-width: 90%; /* Prevents it from being too wide */
+    margin: auto; /* Centers it */
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555; /* Slightly gray for readability */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+.container {
+    width: 90%;  /* Adjusts width based on screen size */
+    max-width: 1200px;  /* Ensures it doesn’t get too wide */
+    margin: auto; /* Centers it */
+}
+h1 {
+    font-size: 2rem; /* Adjusts based on screen */
+}
+img {
+    max-width: 100%; /* Prevents image from overflowing */
+    height: auto;
+    border-radius: 50%; /* If it's a circular image */
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+    .buttons {
+        flex-direction: column; /* Stack buttons instead of side by side */
+    }
+}
+.info-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+.info-section h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+.info-section p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* General Section Styling */
+.info-section, .about-section, .skills-section, .projects-section {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+}
+
+/* Headings */
+.info-section h2, 
+.about-section h2, 
+.skills-section h2, 
+.projects-section h2 {
+    font-size: 22px;
+    color: #333;
+}
+
+/* Paragraphs */
+.info-section p, 
+.about-section p, 
+.skills-section p, 
+.projects-section p {
+    font-size: 16px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Skills List */
+.skills-section ul, 
+.projects-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li, 
+.projects-section li {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+}
+.info-section, .about-section, .skills-section, .projects-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.info-section:hover, 
+.about-section:hover, 
+.skills-section:hover, 
+.projects-section:hover {
+    transform: translateY(-5px); /* Lifts the section slightly on hover */
+}
+h2 {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: #6e8efb;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 0.3s ease-in-out;
+}
+
+h2:hover::after {
+    width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .button-link {
+        display: block; /* Stack buttons vertically on small screens */
+        width: 80%;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .info-section, .about-section, .skills-section, .projects-section {
+        padding: 15px;
+    }
+}
+/* Scroll to Top Button Styling */
+#scrollTopBtn {
+    position: fixed;
+    top: 20px; /* Moves it to the top */
+    right: 20px; /* Positions it in the top-right corner */
+    background-color: #ed5e5e;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover effect */
+#scrollTopBtn:hover {
+    opacity: 1;
+    background-color: #555;
+}
+
+/* Icon Styling */
+#scrollTopBtn i {
+    color: white;
+}
+
+
+
 
 
